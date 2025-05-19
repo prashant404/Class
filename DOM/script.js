@@ -9,7 +9,23 @@ for (let i = 0; i < elements.length; i++) {
 let ele = document.querySelector("h1");
 ele.textContent = "New Heading";
 ele.style.color = "red";
+ele.style.fontSize  ="100px";
 
+let image = document.getElementById("image").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_hpLK-f3kOHV-TJdBjawD6iPkWchTqey3w&s"
 
 //DRY 
 //VARIABLE
+
+//create and append elements
+
+
+let newPara = document.createElement("p");
+newPara.textContent = "I am a new paragraph";
+
+document.getElementById("container").appendChild(newPara);
+
+
+//remove ele
+
+let rm = document.getElementById("remove");
+rm.remove();
